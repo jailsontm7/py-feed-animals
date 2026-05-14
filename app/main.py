@@ -5,11 +5,6 @@ class Animal:
         appetite: int,
         is_hungry: bool = True
     ) -> None:
-        """
-        Inicializa o animal com nome, apetite e estado de fome.
-        Os parâmetros são colocados em novas linhas para seguir o guia de 
-        estilo para definições longas.
-        """
         self.name = name
         self.appetite = appetite
         self.is_hungry = is_hungry
@@ -64,6 +59,3 @@ def feed_animals(animals: list[Animal]) -> int:
     Calcula o total de pontos de comida usando uma expressão geradora.
     """
     return sum(animal.feed() for animal in animals)
-
-
-# A linha abaixo garante que o arquivo termine com uma quebra de linha (W292).
